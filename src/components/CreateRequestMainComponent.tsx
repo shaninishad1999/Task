@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "flowbite-react";
 import { HiPlus, HiTrash } from "react-icons/hi";
+import { HiX } from 'react-icons/hi'; // Ensure you import the correct icon
 
 export function CreateRequestMainComponent() {
   const [urlInputs, setUrlInputs] = useState<string[]>([""]);
@@ -65,9 +66,12 @@ export function CreateRequestMainComponent() {
         <h3 className="text-xl font-semibold text-gray-900 dark:text-white pl-10">
           Create New Request
         </h3>
-        <button className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
-          <HiTrash className="w-5 h-5" />
-        </button>
+      
+
+<button className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
+  <HiX className="w-5 h-5" />
+</button>
+
       </div>
 
       <div className="p-6 space-y-6 mx-auto">
